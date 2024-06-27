@@ -10,12 +10,29 @@
   font-weight: 400;
 }
 
+@media print {
+  @font-face {
+    font-family: "Logical";
+    src: url('./fonts/Logical-Bold.ttf') format("truetype");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "Logical";
+    src: url('./fonts/Logical-Regular.ttf') format("truetype");
+    font-weight: 400;
+  }
+
+  body,
+  :root {
+    font-family: "Logical";
+  }
+}
+
 :root {
   font-family: "Logical";
-
   color-scheme: light dark;
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
