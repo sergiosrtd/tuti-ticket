@@ -1,0 +1,297 @@
+@font-face {
+  font-family: "Logical";
+  src: url(https://fonts.adobe.com/fonts/logical-variable) format("truetype");
+}
+
+:root {
+  font-family: "Logical";
+
+  color-scheme: light dark;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+#app {
+  max-width: 1280px;
+}
+
+#ticket {
+  width: 672px;
+  height: 217px;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+}
+
+.big-ticket {
+  width: calc(100% - 180px);
+  padding: 20px;
+  background: #E6FBF3 url('/assets/tuti-logo-u-pattern.svg') 0 0 repeat;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.big-ticket .basic-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.big-ticket .basic-info .head {
+  width: 100%;
+  display: flex !important;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.big-ticket .basic-info .head .head-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.big-ticket .basic-info .head .head-info .subtitle,
+.big-ticket .basic-info .subtitle {
+  font-size: 12.43px;
+  color: #000;
+}
+
+.big-ticket .head .head-info .title {
+  font-size: 17.57px;
+  font-weight: 700;
+  color: #000;
+}
+
+.big-ticket .head .tuti-logo {
+  height: 32px;
+  margin-bottom: 3px;
+}
+
+.big-ticket .middle-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.big-ticket .middle-info .location-name-container {
+  width: 100%;
+  height: 28px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-ticket .middle-info .location-name-container .location-name {
+
+  font-size: 16.84px;
+  color: #000;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.big-ticket .middle-info .datetime-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-ticket .middle-info .datetime {
+  font-size: 11.36px;
+  color: #000;
+}
+
+.big-ticket .middle-info .price {
+  font-size: 11.36px;
+  font-weight: 700;
+  color: #000;
+}
+
+.big-ticket .footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-ticket .barcode-container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.big-ticket .footer .info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.big-ticket .footer .info .ticket-owner {
+  font-size: 12.11px;
+  color: #000;
+}
+
+.big-ticket .footer .info .ticket-codes {
+  color: #000;
+  font-size: 9.72px;
+}
+
+.big-ticket .footer .info .ticket-extra-info {
+  color: #000;
+  font-size: 6.85px;
+}
+
+.small-ticket {
+  width: 90px;
+  height: calc(100%-50px);
+  padding-left: 18px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 0;
+  background-color: #fff;
+  background-image: linear-gradient(gray 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: right;
+  background-size: .5px 15px;
+  background-repeat: repeat-y;
+}
+
+/* .small-ticket:nth-of-type(1) {
+  margin-right: 15px;
+} */
+
+
+.small-ticket .event-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.small-ticket .event-info .extra-info {
+  font-size: 4.62px;
+  color: #000;
+}
+
+.small-ticket .event-info .event-name {
+  font-size: 6.85px;
+  line-height: 1;
+  font-weight: 700;
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+  color: #000;
+}
+
+.small-ticket .event-info .date-time-event {
+  font-size: 5.13px;
+  color: #000;
+}
+
+.small-ticket .event-price {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6px;
+}
+
+.small-ticket .event-price .price {
+  font-size: 8px;
+  font-weight: 700;
+  color: #000;
+}
+
+.small-ticket .event-price .type {
+  font-size: 5.68px;
+  color: #000;
+}
+
+.small-ticket .event-location {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-ticket .event-location .location-name {
+  font-size: 8px;
+  font-weight: 700;
+  color: #000;
+}
+
+.small-ticket .event-location .location-info {
+  font-size: 5.69px;
+  color: #000;
+}
+
+.small-ticket .event-location .location-subinfo {
+  font-size: 4.62px;
+  color: #000;
+}
+
+.small-ticket .ticket-codes {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-ticket .ticket-codes .code {
+  font-size: 5.79px;
+  color: #000;
+}
+
+.small-ticket .ticket-codes img.small-barcode {
+  width: 50% !important;
+  margin: 4px 0;
+}
+
+.small-ticket .ticket-codes .small-code {
+  font-size: 4.41px;
+  color: #000;
+}
+
+.small-ticket img.tuti-logo {
+  width: 46px !important;
+}
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
