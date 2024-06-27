@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Logical";
-  src: url('./assets/fonts/Logical-Bold.ttf') format("truetype");
+  src: url('./fonts/Logical-Bold.ttf') format("truetype");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Logical";
-  src: url('./assets/fonts/Logical-Regular.ttf') format("truetype");
+  src: url('./fonts/Logical-Regular.ttf') format("truetype");
   font-weight: 400;
 }
 
