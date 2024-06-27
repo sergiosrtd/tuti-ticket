@@ -23,9 +23,20 @@
     font-weight: 400;
   }
 
+  div.break {
+    display: block;
+    page-break-before: always;
+  }
+
   body,
   :root {
     font-family: "Logical";
+  }
+}
+
+@media all {
+  div.break {
+    display: none;
   }
 }
 
