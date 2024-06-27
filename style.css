@@ -1,6 +1,13 @@
 @font-face {
   font-family: "Logical";
-  src: url(https://fonts.adobe.com/fonts/logical-variable) format("truetype");
+  src: url('./assets/fonts/Logical-Bold.ttf') format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Logical";
+  src: url('./assets/fonts/Logical-Regular.ttf') format("truetype");
+  font-weight: 400;
 }
 
 :root {
@@ -34,9 +41,11 @@ body {
 
 #app {
   max-width: 1280px;
+  display: flex;
+  flex-direction: column;
 }
 
-#ticket {
+.ticket {
   width: 672px;
   height: 217px;
   border-radius: 20px;
