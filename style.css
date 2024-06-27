@@ -47,7 +47,7 @@ body {
 .big-ticket {
   width: calc(100% - 180px);
   padding: 20px;
-  background: #E6FBF3 url('/assets/tuti-logo-u-pattern.svg') 0 0 repeat;
+  /* background: #E6FBF3 url('/assets/tuti-logo-u-pattern.svg') 0 0 repeat; */
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -278,7 +278,11 @@ body {
   width: 46px !important;
 }
 
-
+.barcode-container img,
+.small-barcode,
+.tuti-logo {
+  opacity: 0;
+}
 
 
 @media (prefers-color-scheme: light) {
