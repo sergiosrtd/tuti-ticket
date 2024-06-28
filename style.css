@@ -74,15 +74,17 @@ body {
 }
 
 .ticket {
-  width: 672px;
+  width: 692px;
   height: 217px;
   border-radius: 20px;
+  background-color: white;
   display: flex;
+  justify-content: flex-end;
   overflow: hidden;
 }
 
 .big-ticket {
-  width: calc(100% - 180px);
+  width: calc(100% - 180px -20px);
   padding: 20px;
   background-color: white;
   /* background: #E6FBF3 url('/assets/tuti-logo-u-pattern.svg') 0 0 repeat; */
@@ -211,21 +213,17 @@ body {
 .small-ticket {
   width: 90px;
   height: calc(100%-50px);
-  padding-left: 10px !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 25px 0;
+  padding-left: 10px !important;
   background-color: #fff;
   background-image: linear-gradient(gray 33%, rgba(255, 255, 255, 0) 0%);
   background-position: right;
   background-size: .5px 15px;
   background-repeat: repeat-y;
 }
-
-/* .small-ticket:nth-of-type(1) {
-  margin-right: 15px;
-} */
 
 
 .small-ticket .event-info {
